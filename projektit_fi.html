@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Petra P:n ohjelmistokehityksen projektit ja niiden taustat."
+    />
+    <title>Projektit | Petra P.</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Päänavigaatio">
+        <a class="wordmark" href="index_fi.html" aria-label="Petra P., etusivu">
+          <span class="wordmark-mark" aria-hidden="true">P.</span>
+          <span>Petra P.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index_fi.html">Etusivu</a>
+          <a href="projektit_fi.html" class="active" aria-current="page"
+            >Projektit</a
+          >
+        </div>
+        <a class="language-link" href="projects_en.html" lang="en"
+          >English <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro page-width" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span></span> Valikoituja töitä</p>
+          <h1 id="page-title">Projektit<span class="title-period">.</span></h1>
+          <p class="intro-lead">
+            Näissä projekteissa olen harjoitellut etenkin fullstack-kehitystä,
+            rakentanut ominaisuuksia pala kerrallaan ja oppinut matkan varrella
+            uutta.
+          </p>
+          <p class="intro-detail">
+            Lähestymistapani projektiin syntyy sen tavoitteista, vaatimuksista ja
+            aikataulusta. Aloitan hahmottamalla kokonaisuuden ja etenemisen;
+            henkilökohtaisissa töissäni keskityn ensin ydinvaatimuksiin ja toteutan
+            toimivan MVP-version.
+          </p>
+        </div>
+        <aside class="project-index" aria-label="Sivun projektit">
+          <p class="index-label">Tällä sivulla</p>
+          <a class="index-link" href="#booking-section">
+            <span class="index-icon index-icon-booking">
+              <img
+                src="./assets/fogg-monthly-planner-page-with-highlighted-weekend-squares.svg"
+                alt=""
+              />
+            </span>
+            <span><strong>Booking</strong><small>Ajanvarausjärjestelmä</small></span>
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+          <a class="index-link" href="#quiz-section">
+            <span class="index-icon index-icon-quiz">
+              <img src="./assets/earth-globe-geography-svgrepo-com.svg" alt="" />
+            </span>
+            <span><strong>Quiz App</strong><small>Triviasovellus</small></span>
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+          <a class="index-link" href="#fullstack-section">
+            <span class="index-icon index-icon-fullstack">
+              <img src="./assets/react-svgrepo-com.svg" alt="" />
+            </span>
+            <span><strong>Full Stack Open</strong><small>MOOC kurssi</small></span>
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+          <a class="index-link" href="#other-section">
+            <span class="index-icon index-icon-other">
+              <img
+                src="./assets/advanced-study-application-svgrepo-com.svg"
+                alt=""
+              />
+            </span>
+            <span
+              ><strong>Muut työt</strong><small>Yliopiston kurssitöitä</small></span
+            >
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+        </aside>
+      </section>
+
+      <section
+        class="project-section page-width"
+        id="booking-section"
+        aria-labelledby="booking-title"
+      >
+        <div class="section-marker">
+          <span>01</span><i></i><span>NYKYINEN PROJEKTI</span>
+        </div>
+        <article class="project-panel booking-panel">
+          <div class="project-heading">
+            <div class="project-title-group">
+              <span class="project-art project-art-booking">
+                <img
+                  src="./assets/fogg-monthly-planner-page-with-highlighted-weekend-squares.svg"
+                  alt=""
+                />
+              </span>
+              <div>
+                <div class="title-row">
+                  <h2 id="booking-title">Booking</h2>
+                  <span class="status"><span></span> Kehityksessä</span>
+                </div>
+                <p class="project-subtitle">
+                  Ajanvarausjärjestelmä kauneuden ja hyvinvoinnin yrityksille
+                </p>
+              </div>
+            </div>
+            <a
+              class="repo-link"
+              href="https://github.com/petuned/Booking"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+              <span>Projektin repositorio</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <p class="project-summary">
+            Harjoitusprojektina toteutettava web-sovellus, jossa kuvitteelliset
+            yritykset voivat hallita ajanvarauksiaan. Asiakkaat voivat selata
+            palveluja sekä varata ja perua aikoja. Sovellus ei ole tarkoitettu
+            todelliseksi tuotteeksi.
+          </p>
+
+          <div class="tech-row" aria-label="Käytetyt teknologiat">
+            <span class="tech-label">TEKNOLOGIAT</span>
+            <span>React</span><span>Tailwind</span><span>Node.js</span
+            ><span>Express</span> <span>PostgreSQL</span><span>TypeScript</span
+            ><span>Docker</span><span>Kysely</span>
+          </div>
+
+          <div class="booking-details">
+            <section class="detail-column" aria-labelledby="booking-build-title">
+              <p class="section-kicker">01 / RAKENNE</p>
+              <h3 id="booking-build-title">Sovelluksen perusta</h3>
+              <ul class="feature-list">
+                <li>
+                  PostgreSQL-tietokanta toimii Docker-kontissa, ja data säilyy
+                  Composessa määritellyssä volyymissa.
+                </li>
+                <li>Frontend, backend ja tietokanta toimivat omissa konteissaan.</li>
+                <li>
+                  Palvelin käyttää tietokantayhteyteen node-postgresia ja kyselyiden
+                  rakentamiseen TypeScript-yhteensopivaa Kyselyä.
+                </li>
+              </ul>
+              <div class="ai-use">
+                <h4>Tekoälyn käyttö</h4>
+                <ul>
+                  <li>Dockerfile- ja compose-tiedostot.</li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="detail-column roadmap-column"
+              aria-labelledby="booking-roadmap-title"
+            >
+              <p class="section-kicker">02 / ETENEMINEN</p>
+              <h3 id="booking-roadmap-title">MVP ja jatkosuunnitelmat</h3>
+              <p class="roadmap-label">MVP työn alla</p>
+              <ol class="roadmap-list">
+                <li class="done">
+                  Eri yritystyyppien valinta, kuten kampaamot ja hierojat
+                </li>
+                <li class="done">Yritysten palvelujen tarkastelu</li>
+                <li class="in-progress">
+                  Asiakkaiden rekisteröityminen, kirjautuminen ja evästeillä hallitut
+                  sessiot
+                </li>
+                <li>Aikojen varaaminen</li>
+                <li>Omien varausten tarkastelu</li>
+              </ol>
+              <details class="future-details">
+                <summary>Lopullisen version suunnitelmat</summary>
+                <ul>
+                  <li>
+                    Yritysten rekisteröityminen, kirjautuminen ja ajanvarausten
+                    hallinta
+                  </li>
+                  <li>Palvelujen lisääminen, muokkaaminen ja poistaminen</li>
+                  <li>Henkilökunnan osaamisalueiden ja yritystietojen hallinta</li>
+                  <li>Asiakkaiden varausten peruminen</li>
+                </ul>
+              </details>
+            </section>
+          </div>
+
+          <section class="reflection" aria-labelledby="booking-thoughts-title">
+            <div class="reflection-mark" aria-hidden="true">“</div>
+            <div>
+              <p class="section-kicker">MIKÄ TEKEE PROJEKTISTA KIINNOSTAVAN</p>
+              <h3 id="booking-thoughts-title">
+                Samanaikaisuus ja sujuva varauskokemus
+              </h3>
+              <p>
+                Aloitin sovelluksen harjoitellakseni vastaavien palvelujen
+                suunnittelua ja kehitystä sekä uusia työkaluja. Kiinnostavin haaste
+                on estää päällekkäiset varaukset ja näyttää muiden käyttäjien
+                varaamat ajat reaaliaikaisesti. Suunnittelen tähän websocket-yhteyttä
+                sekä backendin puolella alustavia varauksia ja transaktioita.
+              </p>
+              <p>
+                Ratkaisut voivat vielä muuttua työn edetessä. Tilanhallinta on tällä
+                hetkellä React-komponenteissa, ja tarkoitukseni on parantaa myös
+                saavutettavuutta kehityksen aikana.
+              </p>
+            </div>
+          </section>
+        </article>
+      </section>
+
+      <section
+        class="project-section page-width quiz-section"
+        id="quiz-section"
+        aria-labelledby="quiz-title"
+      >
+        <div class="section-marker">
+          <span>02</span><i></i><span>VALMIS PROJEKTI</span>
+        </div>
+        <article class="project-panel quiz-panel">
+          <div class="project-heading quiz-heading">
+            <div class="project-title-group">
+              <span class="project-art project-art-quiz">
+                <img src="./assets/earth-globe-geography-svgrepo-com.svg" alt="" />
+              </span>
+              <div>
+                <p class="section-kicker">RAKENNETTU ITERATIIVISESTI</p>
+                <h2 id="quiz-title">Quiz App <span>— Triviasovellus</span></h2>
+              </div>
+            </div>
+            <a
+              class="repo-link"
+              href="https://github.com/petuned/Quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+              <span>Projektin repositorio</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="quiz-summary">
+            <p>
+              Yksinkertaisesta triviaideasta kasvoi Node.js- ja React-sovellus, jossa
+              käyttäjät voivat pelata, luoda ja muokata omia trivioitaan. Kehitin
+              sovellusta satunnaisesti lähes vuoden ajan, ja olen käyttänyt sitä myös
+              omien opintojeni tukena luomalla luentojen aiheista trivioita omaan
+              käyttööni.
+            </p>
+            <p>
+              Projekti
+              <a href="https://quiz-y85e.onrender.com/" target="_blank"
+                >on saatavilla Renderissä.</a
+              >
+            </p>
+            <div class="quiz-tech" aria-label="Projektissa käytetyt teknologiat">
+              <span class="tech-label">TEKNOLOGIAT</span>
+              <span>Node.js</span><span>Express</span><span>React</span
+              ><span>Tailwind</span><span>MongoDB Atlas</span><span>Mongoose</span
+              ><span>Redux Toolkit</span><span>TypeScript</span>
+            </div>
+          </div>
+          <div class="quiz-details">
+            <section class="detail-column" aria-labelledby="quiz-features-title">
+              <p class="section-kicker">01 / OMINAISUUDET</p>
+              <h3 id="quiz-features-title">Trivioita pelaamiseen ja opiskeluun</h3>
+              <ul class="feature-list">
+                <li>
+                  Vastaa monivalintakysymyksiin musiikista, televisiosta, historiasta
+                  ja monista muista aiheista.
+                </li>
+                <li>
+                  Rekisteröidy luodaksesi omia trivioita viihteeksi tai opiskelun
+                  tueksi.
+                </li>
+                <li>Muokkaa tai poista luomiasi trivioita.</li>
+                <li>
+                  Responsiivinen käyttöliittymä toimii tietokoneella ja mobiilissa.
+                </li>
+              </ul>
+              <aside class="project-goals">
+                <p class="section-kicker">PROJEKTIN TAVOITTEET</p>
+                <ol>
+                  <li>
+                    Toteuttaa itse suunniteltu, laajempi fullstack-projekti
+                    portfolioon.
+                  </li>
+                  <li>
+                    Vahvistaa Full Stack Open -kurssilla opittuja taitoja ja
+                    työkaluja, kuten TypeScriptiä.
+                  </li>
+                </ol>
+                <p class="goals-note">
+                  Teknologiat valikoituivat pääosin tuttuuden ja harjoittelun vuoksi.
+                </p>
+              </aside>
+            </section>
+            <section
+              class="detail-column"
+              aria-labelledby="quiz-implementation-title"
+            >
+              <p class="section-kicker">02 / TOTEUTUS</p>
+              <h3 id="quiz-implementation-title">Toteutus ja teknologiat</h3>
+              <ul class="feature-list">
+                <li>
+                  <strong>Tyypitys ja validointi:</strong> Staattinen tyypitys
+                  TypeScriptillä; Mongoose ja Zod validoivat dataa ajonaikaisesti.
+                </li>
+                <li>
+                  <strong>Tunnistautuminen ja tietoturva:</strong> käyttäjien
+                  tunnistautuminen ja käyttöoikeudet perustuvat tokeneihin.
+                </li>
+                <li>
+                  <strong>Testaus:</strong> yksikkö- ja komponenttitestit, API-testit
+                  ja Playwrightin E2E-testit.
+                </li>
+                <li>
+                  <strong>CI:</strong> GitHub Actions automatisoi frontendin
+                  komponenttitestit ja tuotantoversion buildin tarkistuksen.
+                </li>
+                <li>
+                  <strong>Frontend:</strong> React-käyttöliittymä, React Router
+                  reititykseen ja Redux Toolkit tilanhallintaan; tyylit ja
+                  responsiivisuus on toteutettu vanilla CSS:llä ja Tailwindillä.
+                </li>
+                <li>
+                  <strong>Backend:</strong> Node.js ja Express sovelluslogiikkaan ja
+                  REST-rajapintoihin.
+                </li>
+                <li>
+                  <strong>Tietokanta pilvessä:</strong> MongoDB Atlas joustavien
+                  skeemojen ja tulevien muutosten tueksi.
+                </li>
+              </ul>
+              <div class="ai-use">
+                <h4>Tekoälyn käyttö</h4>
+                <ul>
+                  <li>
+                    Redux Toolkitin selektorit, yhteensovittaminen TypeScriptin
+                    kanssa.
+                  </li>
+                  <li>Trivioiden luomiseen käytetyt lomakekomponentit.</li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="detail-column quiz-work-column"
+              aria-labelledby="quiz-work-title"
+            >
+              <p class="section-kicker">03 / OPPIMINEN</p>
+              <h3 id="quiz-work-title">Työskentely ja opit</h3>
+              <p>
+                Haasteita projektissa aiheutti satunnainen ja iteratiivinen
+                työskentely. Tein projektia opintojen ohessa, jolloin projektiin piti
+                perehtyä uudelleen pidempien taukojen jälkeen. Tätä helpotti
+                kuitenkin laatimani dokumentaatio työskentelystä.
+              </p>
+              <p>
+                Projektia aloittaessani mielessäni oli vain karkea ajatus
+                lopputuloksesta, jolloin toteutukset ja käytetyt työkalut muuttuivat
+                työn edetessä. Tästä sain kuitenkin myös hyvää harjoitusta
+                refaktoroinnista. Tavoitteenani projektissa oli myös harjoitella
+                TypeScriptia, jonka yhteensovittaminen muiden työkalujen kanssa
+                olikin toisinaan haastavaa.
+              </p>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="project-section page-width course-section"
+        aria-labelledby="fullstack-title"
+        id="fullstack-section"
+      >
+        <div class="section-marker">
+          <span>03</span><i></i><span>SUORITETTU KOKONAISUUS</span>
+        </div>
+        <article class="project-panel added-project-panel course-panel">
+          <div class="project-heading added-project-heading">
+            <div class="project-title-group">
+              <span class="project-art project-art-course">
+                <img src="./assets/react-svgrepo-com.svg" alt="" />
+              </span>
+              <h2 id="fullstack-title">
+                Full Stack Open <span>— Modernin web-kehityksen MOOC</span>
+              </h2>
+            </div>
+            <a
+              class="repo-link"
+              href="https://github.com/petuned/fullStackOpen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+              <span>Projektin repositorio</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="added-project-copy">
+            <div>
+              <p>
+                Suoritin Helsingin yliopiston laajan full-stack-verkkokehityskurssin,
+                jossa
+              </p>
+              <ul>
+                <li>Kehitin ja laajensin useita React- ja Node.js-sovelluksia</li>
+                <li>
+                  Toteutin REST-rajapintoja, tunnistautumisia ja
+                  tietokantavuorovaikutuksia
+                </li>
+                <li>
+                  Toteutin tilanhallintaa Reduxilla ja kehittyneillä React-malleilla
+                </li>
+                <li>Laadin yksikkö-, integraatio- ja E2E-testejä</li>
+              </ul>
+              <p>
+                Ydinkurssin lisäksi suoritin <b>TypeScript moduulin</b>, jonka
+                <a
+                  href="https://github.com/petuned/fullStackOpen-part9-TypeScript"
+                  target="_blank"
+                  >repositorio löytyy täältä.</a
+                >
+              </p>
+              <p>
+                Kurssin käymisen tavoitteena oli virkistää muistiani ja päivittää
+                osaamistani web-kehityksestä yliopiston kurssien jälkeen.
+              </p>
+            </div>
+          </div>
+          <div class="quiz-tech" aria-label="Kurssilla käytettyjä teknologioita">
+            <span class="tech-label">TEKNOLOGIAT</span>
+            <span>Node.js</span><span>Express</span><span>React</span
+            ><span>Cypress</span><span>MongoDB Atlas</span><span>Mongoose</span
+            ><span>Redux Toolkit</span><span>JavaScript</span><span>TypeScript</span>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="project-section page-width other-work-section"
+        aria-labelledby="other-title"
+        id="other-section"
+      >
+        <div class="section-marker">
+          <span>04</span><i></i><span>OPINTOJEN TÖITÄ</span>
+        </div>
+        <article class="project-panel added-project-panel other-work-panel">
+          <div class="added-project-heading">
+            <span class="project-art project-art-other">
+              <img
+                src="./assets/advanced-study-application-svgrepo-com.svg"
+                alt=""
+              />
+            </span>
+            <h2 id="other-title">Muut työt</h2>
+          </div>
+          <div class="added-project-copy other-work-copy">
+            <div>
+              <p>Yliopiston kurssien harjoitustöitä:</p>
+              <ol class="other-work-list">
+                <li>
+                  <span class="other-work-description">
+                    Python-ohjelma sähkön tuotannon ja kulutuksen tarkasteluun
+                    Suomessa (Sustainable Software Engineering, COMP.SE.121)
+                  </span>
+                  <a
+                    class="repo-link"
+                    href="https://github.com/petuned/sustainable_software_engineering/tree/master/fingridOpenData"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+                    <span>Projektin repositorio</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="other-work-description">
+                    Yksikkötestejä JavaScript-funktioille Jestillä, parityö (Software
+                    Testing, COMP.SE.200)
+                  </span>
+                  <a
+                    class="repo-link"
+                    href="https://github.com/NiiloR/Course-COMP.SE.200-Software-Testing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+                    <span>Projektin repositorio</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="other-work-description">
+                    C++-korttimuistipeli Qt Creatorilla (Ohjelmointi 2, COMP.CS.110)
+                  </span>
+                  <a
+                    class="repo-link"
+                    href="https://github.com/petuned/Qt-Memory-game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+                    <span>Projektin repositorio</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz-tech" aria-label="Kursseilla käytettyjä teknologioita">
+            <span class="tech-label">TEKNOLOGIAT</span>
+            <span>Python</span><span>JavaScript</span><span>Jest</span
+            ><span>C++</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width">
+      <p>
+        <span class="footer-mark">P.</span> Petra P.
+        <span class="footer-note">Projektit ja tekijänoikeustiedot</span>
+      </p>
+      <div class="credits">
+        <span
+          >Kalenterikuvitus:
+          <a
+            href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Icons8 Ouch!</a
+          ></span
+        >
+        <span
+          >Ikonit:
+          <a href="https://www.svgrepo.com" target="_blank" rel="noopener noreferrer"
+            >SVG Repo</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>

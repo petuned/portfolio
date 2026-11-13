@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Petra P.'s software development projects and the stories behind them."
+    />
+    <title>Projects | Petra P.</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar" aria-label="Main navigation">
+        <a class="wordmark" href="index_en.html" aria-label="Petra P., home">
+          <span class="wordmark-mark" aria-hidden="true">P.</span>
+          <span>Petra P.</span>
+        </a>
+        <div class="nav-links">
+          <a href="index_en.html">Home</a>
+          <a href="projects_en.html" class="active" aria-current="page">Projects</a>
+        </div>
+        <a class="language-link" href="projektit_fi.html" lang="fi"
+          >Suomi <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro page-width" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span></span> Selected work</p>
+          <h1 id="page-title">Projects<span class="title-period">.</span></h1>
+          <p class="intro-lead">
+            These projects have helped me practice full-stack development, build
+            features one step at a time, and learn along the way.
+          </p>
+          <p class="intro-detail">
+            My approach to a project depends on its goals, requirements, and
+            schedule. I start by understanding the overall picture and planning the
+            work. For personal projects, I focus first on the core requirements and
+            build a working MVP.
+          </p>
+        </div>
+        <aside class="project-index" aria-label="Projects on this page">
+          <p class="index-label">On this page</p>
+          <a class="index-link" href="#booking-section">
+            <span class="index-icon index-icon-booking">
+              <img
+                src="./assets/fogg-monthly-planner-page-with-highlighted-weekend-squares.svg"
+                alt=""
+              />
+            </span>
+            <span
+              ><strong>Booking</strong
+              ><small>Appointment booking system</small></span
+            >
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+          <a class="index-link" href="#quiz-section">
+            <span class="index-icon index-icon-quiz">
+              <img src="./assets/earth-globe-geography-svgrepo-com.svg" alt="" />
+            </span>
+            <span><strong>Quiz App</strong><small>Trivia app</small></span>
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+          <a class="index-link" href="#fullstack-section">
+            <span class="index-icon index-icon-fullstack">
+              <img src="./assets/react-svgrepo-com.svg" alt="" />
+            </span>
+            <span><strong>Full Stack Open</strong><small>MOOC course</small></span>
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+          <a class="index-link" href="#other-section">
+            <span class="index-icon index-icon-other">
+              <img
+                src="./assets/advanced-study-application-svgrepo-com.svg"
+                alt=""
+              />
+            </span>
+            <span
+              ><strong>Other projects</strong
+              ><small>University coursework</small></span
+            >
+            <span class="index-arrow" aria-hidden="true">↘</span>
+          </a>
+        </aside>
+      </section>
+
+      <section
+        class="project-section page-width"
+        id="booking-section"
+        aria-labelledby="booking-title"
+      >
+        <div class="section-marker">
+          <span>01</span><i></i><span>CURRENT PROJECT</span>
+        </div>
+        <article class="project-panel booking-panel">
+          <div class="project-heading">
+            <div class="project-title-group">
+              <span class="project-art project-art-booking">
+                <img
+                  src="./assets/fogg-monthly-planner-page-with-highlighted-weekend-squares.svg"
+                  alt=""
+                />
+              </span>
+              <div>
+                <div class="title-row">
+                  <h2 id="booking-title">Booking</h2>
+                  <span class="status"><span></span> In development</span>
+                </div>
+                <p class="project-subtitle">
+                  An appointment booking system for beauty and wellness businesses
+                </p>
+              </div>
+            </div>
+            <a
+              class="repo-link"
+              href="https://github.com/petuned/Booking"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+              <span>Project repository</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <p class="project-summary">
+            A practice web application where fictional businesses can manage
+            appointments. Customers can browse services, book appointments, and
+            cancel them. The application is not intended to be a real product.
+          </p>
+
+          <div class="tech-row" aria-label="Technologies used">
+            <span class="tech-label">TECHNOLOGIES</span>
+            <span>React</span><span>Tailwind</span><span>Node.js</span
+            ><span>Express</span> <span>PostgreSQL</span><span>TypeScript</span
+            ><span>Docker</span><span>Kysely</span>
+          </div>
+
+          <div class="booking-details">
+            <section class="detail-column" aria-labelledby="booking-build-title">
+              <p class="section-kicker">01 / STRUCTURE</p>
+              <h3 id="booking-build-title">The foundation</h3>
+              <ul class="feature-list">
+                <li>
+                  The PostgreSQL database runs in a Docker container, and its data is
+                  stored in a volume defined in Compose.
+                </li>
+                <li>
+                  The frontend, backend, and database run in separate containers.
+                </li>
+                <li>
+                  The server uses node-postgres for database connections and Kysely
+                  for building TypeScript-compatible queries.
+                </li>
+              </ul>
+              <div class="ai-use">
+                <h4>Use of AI</h4>
+                <ul>
+                  <li>Dockerfile and Compose files.</li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="detail-column roadmap-column"
+              aria-labelledby="booking-roadmap-title"
+            >
+              <p class="section-kicker">02 / PROGRESS</p>
+              <h3 id="booking-roadmap-title">MVP and future plans</h3>
+              <p class="roadmap-label">MVP in progress</p>
+              <ol class="roadmap-list">
+                <li class="done">
+                  Choose between different business types, such as hair salons and
+                  massage studios
+                </li>
+                <li class="done">Browse businesses' services</li>
+                <li class="in-progress">
+                  Customer registration and login, with cookie-based sessions
+                </li>
+                <li>Book appointments</li>
+                <li>View personal bookings</li>
+              </ol>
+              <details class="future-details">
+                <summary>Plans for the final version</summary>
+                <ul>
+                  <li>
+                    Business registration and login, and appointment management
+                  </li>
+                  <li>Add, edit, and remove services</li>
+                  <li>Manage staff skills and business information</li>
+                  <li>Allow customers to cancel appointments</li>
+                </ul>
+              </details>
+            </section>
+          </div>
+
+          <section class="reflection" aria-labelledby="booking-thoughts-title">
+            <div class="reflection-mark" aria-hidden="true">“</div>
+            <div>
+              <p class="section-kicker">WHAT MAKES THIS PROJECT INTERESTING</p>
+              <h3 id="booking-thoughts-title">
+                Concurrency and a smooth booking experience
+              </h3>
+              <p>
+                I started the application to practice designing and developing
+                similar services and to learn new tools. The most interesting
+                challenge is preventing double bookings and showing other users'
+                booked times in real time. I am considering using WebSockets, along
+                with provisional bookings and transactions on the backend.
+              </p>
+              <p>
+                The solutions may change as development progresses. State management
+                currently lives in React components, and I also plan to improve
+                accessibility during development.
+              </p>
+            </div>
+          </section>
+        </article>
+      </section>
+
+      <section
+        class="project-section page-width quiz-section"
+        id="quiz-section"
+        aria-labelledby="quiz-title"
+      >
+        <div class="section-marker">
+          <span>02</span><i></i><span>COMPLETED PROJECT</span>
+        </div>
+        <article class="project-panel quiz-panel">
+          <div class="project-heading quiz-heading">
+            <div class="project-title-group">
+              <span class="project-art project-art-quiz">
+                <img src="./assets/earth-globe-geography-svgrepo-com.svg" alt="" />
+              </span>
+              <div>
+                <p class="section-kicker">BUILT ITERATIVELY</p>
+                <h2 id="quiz-title">Quiz App <span>— Trivia app</span></h2>
+              </div>
+            </div>
+            <a
+              class="repo-link"
+              href="https://github.com/petuned/Quiz"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+              <span>Project repository</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="quiz-summary">
+            <p>
+              A simple trivia idea grew into a Node.js and React application where
+              users can play, create, and edit their own quizzes. I developed it
+              intermittently for almost a year, and I have also used it to support my
+              own studies by creating quizzes on lecture topics for personal use.
+            </p>
+            <p>
+              The project
+              <a href="https://quiz-y85e.onrender.com/" target="_blank"
+                >is available on Render.</a
+              >
+            </p>
+            <div class="quiz-tech" aria-label="Technologies used in the project">
+              <span class="tech-label">TECHNOLOGIES</span>
+              <span>Node.js</span><span>Express</span><span>React</span
+              ><span>Tailwind</span><span>MongoDB Atlas</span><span>Mongoose</span
+              ><span>Redux Toolkit</span><span>TypeScript</span>
+            </div>
+          </div>
+          <div class="quiz-details">
+            <section class="detail-column" aria-labelledby="quiz-features-title">
+              <p class="section-kicker">01 / FEATURES</p>
+              <h3 id="quiz-features-title">Quizzes for play and study</h3>
+              <ul class="feature-list">
+                <li>
+                  Answer multiple-choice questions about music, television, history,
+                  and many other topics.
+                </li>
+                <li>
+                  Register to create your own quizzes for entertainment or to help
+                  with studying.
+                </li>
+                <li>Edit or remove quizzes you have created.</li>
+                <li>The responsive design works on desktop and mobile devices.</li>
+              </ul>
+              <aside class="project-goals">
+                <p class="section-kicker">PROJECT GOALS</p>
+                <ol>
+                  <li>
+                    Build a larger full-stack project of my own for my portfolio.
+                  </li>
+                  <li>
+                    Strengthen the skills and tools learned in the Full Stack Open
+                    course, such as TypeScript.
+                  </li>
+                </ol>
+                <p class="goals-note">
+                  I chose the technologies mainly for familiarity and practice.
+                </p>
+              </aside>
+            </section>
+            <section
+              class="detail-column"
+              aria-labelledby="quiz-implementation-title"
+            >
+              <p class="section-kicker">02 / IMPLEMENTATION</p>
+              <h3 id="quiz-implementation-title">Implementation and technologies</h3>
+              <ul class="feature-list">
+                <li>
+                  <strong>Type safety and validation:</strong> Static typing with
+                  TypeScript; Mongoose and Zod validate data at runtime.
+                </li>
+                <li>
+                  <strong>Authentication and security:</strong> User authentication
+                  and authorization are token-based.
+                </li>
+                <li>
+                  <strong>Testing:</strong> Unit and component tests, API tests, and
+                  Playwright end-to-end tests.
+                </li>
+                <li>
+                  <strong>CI:</strong> GitHub Actions automates frontend component
+                  tests and production build verification.
+                </li>
+                <li>
+                  <strong>Frontend:</strong> React for the user interface, React
+                  Router for routing, and Redux Toolkit for state management; styling
+                  and responsiveness use vanilla CSS and Tailwind CSS.
+                </li>
+                <li>
+                  <strong>Backend:</strong> Node.js and Express for application logic
+                  and REST APIs.
+                </li>
+                <li>
+                  <strong>Cloud database:</strong> MongoDB Atlas for flexible schemas
+                  and future changes.
+                </li>
+              </ul>
+              <div class="ai-use">
+                <h4>Use of AI</h4>
+                <ul>
+                  <li>
+                    Redux Toolkit selectors and their compatibility with TypeScript.
+                  </li>
+                  <li>Form components used to create quizzes.</li>
+                </ul>
+              </div>
+            </section>
+            <section
+              class="detail-column quiz-work-column"
+              aria-labelledby="quiz-work-title"
+            >
+              <p class="section-kicker">03 / LEARNINGS</p>
+              <h3 id="quiz-work-title">Work and lessons learned</h3>
+              <p>
+                One challenge was working on the project intermittently and
+                iteratively. I worked on it alongside my studies, so I had to get
+                back up to speed after longer breaks. The documentation I wrote about
+                my work helped with this.
+              </p>
+              <p>
+                When I started the project, I only had a rough idea of the outcome,
+                so the implementation and tools changed as I went. This also gave me
+                valuable practice in refactoring. Another goal was to practice
+                TypeScript, and integrating it with the other tools was sometimes
+                challenging.
+              </p>
+            </section>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="project-section page-width course-section"
+        aria-labelledby="fullstack-title"
+        id="fullstack-section"
+      >
+        <div class="section-marker">
+          <span>03</span><i></i><span>COMPLETED COURSE</span>
+        </div>
+        <article class="project-panel added-project-panel course-panel">
+          <div class="project-heading added-project-heading">
+            <div class="project-title-group">
+              <span class="project-art project-art-course">
+                <img src="./assets/react-svgrepo-com.svg" alt="" />
+              </span>
+              <h2 id="fullstack-title">
+                Full Stack Open <span>— Modern web development MOOC</span>
+              </h2>
+            </div>
+            <a
+              class="repo-link"
+              href="https://github.com/petuned/fullStackOpen"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+              <span>Project repository</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="added-project-copy">
+            <div>
+              <p>
+                I completed the University of Helsinki's comprehensive full-stack web
+                development course, where I:
+              </p>
+              <ul>
+                <li>
+                  Developed and extended several React and Node.js applications
+                </li>
+                <li>Built REST APIs, authentication, and database interactions</li>
+                <li>
+                  Implemented state management with Redux and advanced React patterns
+                </li>
+                <li>Wrote unit, integration, and end-to-end tests</li>
+              </ul>
+              <p>
+                In addition to the core course, I completed the
+                <b>TypeScript module</b>, whose
+                <a
+                  href="https://github.com/petuned/fullStackOpen-part9-TypeScript"
+                  target="_blank"
+                  >repository can be found here.</a
+                >
+              </p>
+              <p>
+                I took the course to refresh my memory and update my web development
+                skills after my university courses.
+              </p>
+            </div>
+          </div>
+          <div class="quiz-tech" aria-label="Technologies used in the course">
+            <span class="tech-label">TECHNOLOGIES</span>
+            <span>Node.js</span><span>Express</span><span>React</span
+            ><span>Cypress</span><span>MongoDB Atlas</span><span>Mongoose</span
+            ><span>Redux Toolkit</span><span>JavaScript</span><span>TypeScript</span>
+          </div>
+        </article>
+      </section>
+
+      <section
+        class="project-section page-width other-work-section"
+        aria-labelledby="other-title"
+        id="other-section"
+      >
+        <div class="section-marker">
+          <span>04</span><i></i><span>COURSE PROJECTS</span>
+        </div>
+        <article class="project-panel added-project-panel other-work-panel">
+          <div class="added-project-heading">
+            <span class="project-art project-art-other">
+              <img
+                src="./assets/advanced-study-application-svgrepo-com.svg"
+                alt=""
+              />
+            </span>
+            <h2 id="other-title">Other projects</h2>
+          </div>
+          <div class="added-project-copy other-work-copy">
+            <div>
+              <p>Course assignments from my university studies:</p>
+              <ol class="other-work-list">
+                <li>
+                  <span class="other-work-description">
+                    A Python program for exploring electricity production and
+                    consumption in Finland (Sustainable Software Engineering,
+                    COMP.SE.121)
+                  </span>
+                  <a
+                    class="repo-link"
+                    href="https://github.com/petuned/sustainable_software_engineering/tree/master/fingridOpenData"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+                    <span>Project repository</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="other-work-description">
+                    JavaScript function unit tests with Jest, pair work (Software
+                    Testing, COMP.SE.200)
+                  </span>
+                  <a
+                    class="repo-link"
+                    href="https://github.com/NiiloR/Course-COMP.SE.200-Software-Testing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+                    <span>Project repository</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+                <li>
+                  <span class="other-work-description">
+                    A C++ card memory game built with Qt Creator (Programming 2,
+                    COMP.CS.110)
+                  </span>
+                  <a
+                    class="repo-link"
+                    href="https://github.com/petuned/Qt-Memory-game"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src="./assets/github-142-svgrepo-com.svg" alt="" />
+                    <span>Project repository</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="quiz-tech" aria-label="Technologies used in the coursework">
+            <span class="tech-label">TECHNOLOGIES</span>
+            <span>Python</span><span>JavaScript</span><span>Jest</span
+            ><span>C++</span>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width">
+      <p>
+        <span class="footer-mark">P.</span> Petra P.
+        <span class="footer-note">Projects and credits</span>
+      </p>
+      <div class="credits">
+        <span
+          >Calendar illustration:
+          <a
+            href="https://icons8.com/illustrations/author/zD2oqC8lLBBA"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Icons8 Ouch!</a
+          ></span
+        >
+        <span
+          >Icons:
+          <a href="https://www.svgrepo.com" target="_blank" rel="noopener noreferrer"
+            >SVG Repo</a
+          ></span
+        >
+      </div>
+    </footer>
+  </body>
+</html>
